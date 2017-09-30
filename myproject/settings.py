@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
     'boards',
     'widget_tweaks',
     'django.contrib.admin',
@@ -125,3 +126,7 @@ STATIC_ROOT = 'static/'
 # STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR, 'static'),
 #]
+
+# auth view redirect url
+LOGOUT_REDIRECT_URL = 'boards.home'
+LOGIN_REDIRECT_URL = 'boards.home'
