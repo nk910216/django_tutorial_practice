@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hant'
 
 TIME_ZONE = 'UTC'
 
@@ -130,3 +130,6 @@ STATIC_ROOT = 'static/'
 # auth view redirect url
 LOGOUT_REDIRECT_URL = 'boards.home'
 LOGIN_REDIRECT_URL = 'boards.home'
+
+# login user - for user not logged in.
+LOGIN_URL = 'account.login'

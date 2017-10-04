@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}HomePage{% endblock%}
+
+{% block breadcrumb %}
+<li class="breadcrumb-item"><a href="{% url 'boards.home' %}">Boards</a></li>
+{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  <b>Hello, {{ user.username }}</b>
+{% else %}
+  <b>Please Log in</b>
+{% endif %}
+{% endblock %}
